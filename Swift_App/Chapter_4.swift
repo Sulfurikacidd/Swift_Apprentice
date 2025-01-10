@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+
+//In this Chapter we are going to learn about for loops and switch st.
