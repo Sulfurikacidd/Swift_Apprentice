@@ -8,63 +8,74 @@
 
 import Foundation
 
-// --- Functions
+// --- func - block of code which you can reuse and/or performs some functionality.
 
+// --- Basic func
 /*
- func name(input parameters) -> return type {
-    CODE
-    return value
- }
+ func <NAME> (PARAMETER LIST) { CODE HERE }
  */
 
-// Just one input parameters.
-func print_name(name: String) {
-    print("My name is \(name)\n");
+// --- Basic func declaration:
+/// This func prints my name
+func my_name() {
+    print("Hello name is Talal");
 }
 
-// Two or more input parameters.
-// Inside and Outside Arguments.
-func print_sum_of(_ a: Int, and b: Int) {
-    print("The sum of \(a) and \(b) is \(a+b)\n");
+// --- func with input parameters:
+/// This func prints the name given
+/// - Parameter name: name given
+func myNameIs(_ name: String) {
+    print("Hello my name is \(name)");
 }
 
-// Default value(s).
-// If no value is given for b at compile time, the compiler will take 1 as its default value.
-func print_muliple_of(_ a: Int, and b: Int = 1) {
-    print("Multiple of \(a) and \(b) is \(a*b)\n");
+// --- func with multiple input parameters:
+func sumOf(_ a: Int, and b: Int) {
+    print("The sum of \(a) and \(b) is = \(a+b)");
 }
 
-// Return value(s).
-// funcs can return value(s).
-// which in return you can store in variables and work with.
-func sum_of(_ a: Int, and b: Int) -> Int {
-    var sum = 0;
-    sum = a + b;
-    return sum;
+// --- func with default input parameter value:
+func multipleOf(_ multiplier: Int, and value: Int = 1) {
+    print("\(multiplier) x \(value) = \(multiplier * value)");
 }
 
-/*
- -- storing the return value of func in a var:
- let sum = sum_of(2, and: 3);
- 
- -- using the variable (stoing the return value) in program:
- print("The sum of 2 values is: \(sum)\n");
- */
-
-
-// Multiple Return values using Tuples.
-func addAndSubtract(_ a: Int, and b: Int) -> (add: Int, subtract: Int) {
-    var add = a + b;
-    var subtract = a - b;
-    
-    return (add, subtract);
+// --- func with return value(s):
+// --- the returned value could be stored into a var and further processe/used in the code.
+func returnSumof(_ a: Int, and b: Int) -> Int {
+    return (a + b);
 }
 
-/*
- -- storing the returning tuple in var:
- let addAndSubtract = addAndSubtract(5, and: 8);
- 
- -- using the returned tuple values further in code:
- print("Add value in AddAndSubtract: \(addAndSubtract.add)\n");
- print("Subtract value in AddAndSubtract: \(addAndSubtract.subtract)\n");
- */
+// --- returning multiple values using Tuples:
+// --- each value can be stored into a different var and futher used/processed.
+func sumAndDifference(_ a: Int, and b: Int) -> (sum: Int, minus: Int) {
+    return(a+b, a-b);
+}
+
+// --- Pass-by-value:
+// You can use "inout" keyword to change a func' parameter
+func incrementAndPrint(_ value: inout Int) {
+    value += 1
+    print("Incremented value is: \(value)");
+}
+
+// OR you can simply copy the parameter into an var inside a func and use it that way which gives you much more control over your code and is traditional way !!!
+
+
+// --- func as input parameter:
+// 1. --- create multiple funcs with diff functionality
+func add(_ a: Int, _ b : Int) -> Int {
+    return a + b
+}
+
+func mult(_ a: Int, _ b: Int) -> Int {
+    return a * b
+}
+
+func subt(_ a: Int, _ b : Int) -> Int {
+    return a - b
+}
+
+// 2. --- pass a func skeleton into a func
+func calculator(_ function: (Int, Int) -> Int, a: Int, b: Int) -> Int {
+    let result = function(a, b) // 3. --- pass the input para into the skeleton, which will perform the functionality according to the func passed and store the result into the var.
+    return result // 4. --- result then can be returned.
+}

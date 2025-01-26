@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D08900B2D320F7500FA276B /* Chapter_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D08900A2D320F7500FA276B /* Chapter_5.swift */; };
+		5D0DAE962D449A8600CA79CB /* Chapter_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DAE952D449A8600CA79CB /* Chapter_6.swift */; };
 		5D4E1A052D2F9E81004F52E9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4E1A042D2F9E81004F52E9 /* main.swift */; };
 		5D4E1A0E2D2F9EC8004F52E9 /* Chapter_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4E1A0D2D2F9EC8004F52E9 /* Chapter_2.swift */; };
 		5D4E1A102D2FA898004F52E9 /* Chapter_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4E1A0F2D2FA898004F52E9 /* Chapter_3.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		5D08900A2D320F7500FA276B /* Chapter_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter_5.swift; sourceTree = "<group>"; };
+		5D0DAE952D449A8600CA79CB /* Chapter_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter_6.swift; sourceTree = "<group>"; };
 		5D4E1A012D2F9E81004F52E9 /* Swift_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_App; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4E1A042D2F9E81004F52E9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5D4E1A0D2D2F9EC8004F52E9 /* Chapter_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter_2.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				5D4E1A0F2D2FA898004F52E9 /* Chapter_3.swift */,
 				5D61CBA52D30E2A00052ACAD /* Chapter_4.swift */,
 				5D08900A2D320F7500FA276B /* Chapter_5.swift */,
+				5D0DAE952D449A8600CA79CB /* Chapter_6.swift */,
 			);
 			path = Swift_App;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			files = (
 				5D08900B2D320F7500FA276B /* Chapter_5.swift in Sources */,
 				5D61CBA62D30E2A00052ACAD /* Chapter_4.swift in Sources */,
+				5D0DAE962D449A8600CA79CB /* Chapter_6.swift in Sources */,
 				5D4E1A0E2D2F9EC8004F52E9 /* Chapter_2.swift in Sources */,
 				5D4E1A102D2FA898004F52E9 /* Chapter_3.swift in Sources */,
 				5D4E1A052D2F9E81004F52E9 /* main.swift in Sources */,

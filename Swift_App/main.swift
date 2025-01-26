@@ -45,16 +45,31 @@ print("The num is \(even_odd(num: 5))\n")
 
 print(find_axis(coordinates: (5,6)) + "\n")
 
-print_name(name: "Talal")
+print(" ---- Chapter - 5 ---- \n");
 
-print_sum_of(2, and: 5)
+my_name()
 
-print_muliple_of(2, and: 3)
+myNameIs("Matt Galloway")
 
-let sum = sum_of(2, and: 3); //storing the return value of func in a var.
-print("The sum of 2 values is: \(sum)\n") //using the variable (stoing the return value) in program.
+sumOf(2, and: 3)
+
+multipleOf(5) //uses the default value.
+multipleOf(5, and: 2)
+
+let sum_of = returnSumof(2, and: 3)
+print("sum of is \(sum_of)")
+
+let sum_and_difference = sumAndDifference(7, and: 2)
+print("sum: \(sum_and_difference.sum) and diff: \(sum_and_difference.minus)")
+
+var value = 5
+incrementAndPrint(&value) //has to pass a var and use &, cannot pass a literal !!
+
+print("Calculator: \(calculator(subt, a: 5, b: 3))")
 
 
-let addAndSubtract = addAndSubtract(5, and: 8);
-print("Add value in AddAndSubtract: \(addAndSubtract.add)\n");
-print("Subtract value in AddAndSubtract: \(addAndSubtract.subtract)\n");
+print("\n ---- Chapter - 6 ---- \n");
+
+unwrap_occupation(occupation: occupation)
+
+guard_optional(numValue: numValue)
