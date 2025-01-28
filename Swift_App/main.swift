@@ -73,3 +73,9 @@ print("\n ---- Chapter - 6 ---- \n");
 unwrap_occupation(occupation: occupation)
 
 guard_optional(numValue: numValue)
+
+
+printNumberOfSides(shape_name: "Triangle")
+
+
+unwrap_divison(nume: 10, by: 3)
